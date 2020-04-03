@@ -1,0 +1,10 @@
+<section>
+  <h1>Create Article</h1>
+  <form name="formCreateArticle" style="display: flex; flex-direction: column;margin-top: 20px;">
+    <label>Title:</label>
+    <input type="text" ng-model="e.title">
+    <label style="padding-top: 10px;">Content</label>
+    <textarea ng-model="e.content" cols="30" rows="10"></textarea>
+    <button ng-click="vm.createArticle(formCreateArticle, e)" style="margin-top: 20px; padding: 10px 0;">Create an Article</button>
+  </form>
+</section>
